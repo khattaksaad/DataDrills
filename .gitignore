@@ -2,25 +2,76 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Data
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Data (Add if your data is large)
 *.csv
-# Keep the dataset if it's small and crucial, but generally data is ignored. 
-# Uncomment the line above to ignore csv files.
+*.xls
+*.xlsx
+*.json
+*.sqlite
+*.db
 
 # Models
 *.pkl
+*.h5
+*.hdf5
+*.model
+*.pt
+*.pth
+*.onnx
 
-# Virtual Environment
-.venv/
-envml/
-venv/
-ENV/
+# Logs
+*.log
 
-# Testing
+# Unit Test / Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
 .pytest_cache/
+cover/
 
-# IDE/Editor
-.vscode/
+# IDEs
 .idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
