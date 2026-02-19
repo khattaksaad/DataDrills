@@ -5,3 +5,9 @@ pandas
 numpy
 pydantic
 scikit-learn
+httpx
+python-multipart
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
