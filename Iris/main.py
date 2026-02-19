@@ -35,6 +35,10 @@ app = FastAPI()
 static_dir = os.path.join(BASE_DIR, "static")
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
+
 
 @app.get('/')
 async def home():
